@@ -1,2 +1,9 @@
-# minimalist-currency-converter
-A minimalist currency converter write in Flutter
+# Minimalist Currency Converter
+
+# Dependencies
+* http: ^0.12.2
+
+# Resources
+[European Central Bank](https://ratesapi.io/)
+# Authorship 
+
