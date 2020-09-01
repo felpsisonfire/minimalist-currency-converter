@@ -15,7 +15,7 @@ Clone the repository to your computer with ```git clone ```
 ![Preview2](/lib/assets/preview2.jfif)
 
 # Contribution
-You can check the (repository project)[https://github.com/felpsisonfire/minimalist-currency-converter/projects/1] in order to contribute and, there is a basic TODO with the main features to be implemented. 
+You can check the [repository project](https://github.com/felpsisonfire/minimalist-currency-converter/projects/1) in order to contribute and, there is a basic TODO with the main features to be implemented. 
 ## TODO:
   - [ ] Sort rates by alphabetical order, and price.
   - [ ] Search rate by currency country, and abreviation. 
