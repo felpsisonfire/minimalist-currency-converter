@@ -7,7 +7,7 @@ class Rate {
   String base;
   String date;
 
-  dynamic rates = Map(); // <String, Double>
+  dynamic rates = Map();
 
   Rate({this.base, this.date, this.rates});
 
@@ -22,7 +22,6 @@ class Rate {
 
 Future<Rate> fetchRates() async {
   final response = await http.get('https://api.ratesapi.io/api/latest');
-
   if (response.statusCode == 200) {
     return Rate.fromJson(json.decode(response.body));
   } else {
