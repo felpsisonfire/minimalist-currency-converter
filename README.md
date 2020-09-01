@@ -7,7 +7,7 @@ A minimalist EUR currency converter write with Flutter framework with data from 
 
 # Getting Started 
 
-Clone the repository to your computer with ```git clone ```
+Clone the repository to your computer with ```git clone https://github.com/felpsisonfire/minimalist-currency-converter.git```
  navigate to the minimalist-currency-converter directory and do ```flutter run```
 
 # Usage
