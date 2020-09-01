@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:currency/models/fetch_rates.dart';
 
@@ -22,12 +24,46 @@ class _CardListViewState extends State<CardListView> {
         String currency = rates.keys.elementAt(index);
         return Container(
           height: 60.0,
-          color: Colors.blue,
+          color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("$currency"),
-              Text("${rates[currency]}"),
+              Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    height: 60,
+                    child: IconButton(
+                      icon: Icon(Icons.attach_money),
+                      onPressed: null,
+                    ),
+                  ),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment(-0.25, 0.5),
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "$currency",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "${rates[currency]}",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         );

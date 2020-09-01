@@ -1,3 +1,4 @@
+import 'package:currency/widgets/rate_text.dart';
 import 'package:flutter/material.dart';
 
 class MainDisplay extends StatelessWidget {
@@ -19,16 +20,24 @@ class MainDisplay extends StatelessWidget {
               borderRadius: BorderRadius.circular(25),
               color: Colors.blue,
             ),
-            child: Center(
-              child: Text(
-                "EUR",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Center(
+                  child: Text(
+                    "EUR",
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
-                textAlign: TextAlign.center,
-              ),
+                Padding(padding: const EdgeInsets.all(15)),
+                RateTextFields(),
+              ],
             ),
           ),
         )
